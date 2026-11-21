@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Cadastro - Autoguel</title>
+</head>
+<body>
+    <header class="button">
+        <a href="index.html" class="btn-link">← Início</a>
+        <a href="catalogo.html" class="btn-link">Catálogo</a>
+        <a href="reserva.html" class="btn-link">Reserva</a>
+        <a href="login.html" class="submit">Já tenho conta</a>
+    </header>
+
+    <main class="containerCadastro">
+        <div class="lado-esquerdo">
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="Logo Autoguel">
+            </a>
+            <h1>Olá, Faça seu cadastro para continuar!</h1>
+            <h2>Lembre-se de revisar seus dados preenchidos, são importantes para seu cadastro e realizar sua reserva.</h2>
+        </div>
+
+        <div class="lado-direito">
+            <form class="form" action="login.html" method="post">
+                <label class="label">
+                    Nome Completo
+                    <input class="input" type="text" name="nome" placeholder="Digite seu nome completo" required>
+                </label>
+
+                <label class="label">
+                    Telefone
+                    <input class="input" type="tel" name="telefone" placeholder="(11) 99999-9999" required>
+                </label>
+
+                <label class="label">
+                    Email
+                    <input class="input" type="email" name="email" placeholder="seu@email.com" required>
+                </label>
+
+                <label class="label">
+                    CPF
+                    <input class="input" type="text" name="cpf" placeholder="000.000.000-00" required>
+                </label>
+
+                <label class="label">
+                    CNH
+                    <input class="input" type="text" name="cnh" placeholder="Número do registro da CNH" required>
+                </label>
+
+                <label class="label">
+                    Senha
+                    <input class="input" type="password" name="senha" placeholder="Digite sua senha" minlength="6" required>
+                </label>
+
+                <label class="label-lgpd">
+                    <input type="checkbox" name="lgpd" required>
+                    Concordo com o tratamento dos meus dados conforme a LGPD.
+                </label>
+
+                <input type="submit" value="Cadastrar" class="submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

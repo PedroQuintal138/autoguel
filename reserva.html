@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Reserva de Veículo - Autoguel</title>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="nav-logo">
+                <img src="img/logo.png" alt="Logo Autoguel">
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="catalogo.html" class="nav-link">Catálogo</a>
+                <a href="reserva.html" class="nav-link ativo">Reserva</a>
+            </nav>
+
+            <div class="nav-acoes">
+                <a href="login.html" class="btn-link">Entrar</a>
+                <a href="cadastro.html" class="btn-destaque">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- FORMULÁRIO DE RESERVA -->
+    <main class="containerReserva">
+        <h1 class="titulo-reserva">Reserve seu Veículo</h1>
+        <h2 class="subtitulo-reserva">
+            Preencha as informações da locação. Rápido, fácil e sem burocracia.
+        </h2>
+
+        <!-- AVISO DE LOJA ÚNICA -->
+        <div class="loja-info">
+            📍 <strong>Local de Retirada e Devolução:</strong> Loja Central Autoguel (Av. Principal, 1000 - Loja Única).
+            <br>
+            <small>Todos os veículos são entregues limpos, revisados e com tanque cheio ou bateria 100% carregada.</small>
+        </div>
+
+        <form class="form form-reserva" action="index.html" method="get">
+            
+            <!-- ESCOLHA DO VEÍCULO / CATEGORIA -->
+            <label class="label">
+                Modelo e Categoria do Veículo
+                <select class="input" name="modelo" required>
+                    <option value="" disabled selected>Selecione o veículo desejado</option>
+                    <optgroup label="Carros Elétricos (Sustentabilidade)">
+                        <option value="byd-dolphin">BYD Dolphin Mini - Compacto Elétrico (ou similar) - R$ 139,90/dia</option>
+                        <option value="kwid-etech">Renault Kwid E-Tech - Subcompacto Elétrico (ou similar) - R$ 119,90/dia</option>
+                        <option value="ora-03">GWM Ora 03 Skin - Hatch Premium Elétrico (ou similar) - R$ 169,90/dia</option>
+                        <option value="volvo-ex30">Volvo EX30 Recharge - SUV Premium Elétrico (ou similar) - R$ 249,90/dia</option>
+                    </optgroup>
+                    <optgroup label="Carros Híbridos Flex">
+                        <option value="corolla-hybrid">Toyota Corolla Altis Hybrid - Sedan Médio Híbrido (ou similar) - R$ 189,90/dia</option>
+                        <option value="corolla-cross">Toyota Corolla Cross Hybrid - SUV Híbrido (ou similar) - R$ 219,90/dia</option>
+                    </optgroup>
+                    <optgroup label="Carros Convencionais Flex">
+                        <option value="hb20">Hyundai HB20 1.0 - Hatch Compacto Econômico (ou similar) - R$ 109,90/dia</option>
+                        <option value="onix-plus">Chevrolet Onix Plus 1.0 Turbo - Sedan Compacto (ou similar) - R$ 129,90/dia</option>
+                        <option value="renegade">Jeep Renegade 1.3 Turbo - SUV Compacto (ou similar) - R$ 179,90/dia</option>
+                    </optgroup>
+                </select>
+            </label>
+
+            <div class="aviso-similar aviso-similar-reserva">
+                ⚠️ <strong>Aviso da Categoria:</strong> A reserva garante a categoria escolhida (este veículo ou um modelo similar equivalente).
+            </div>
+
+            <!-- RETIRADA -->
+            <div class="linha-campos">
+                <label class="label campo-duplo">
+                    Data de Retirada
+                    <input class="input" type="date" name="data_retirada" required>
+                </label>
+                <label class="label campo-simples">
+                    Horário
+                    <input class="input" type="time" name="hora_retirada" required>
+                </label>
+            </div>
+
+            <!-- DEVOLUÇÃO -->
+            <div class="linha-campos">
+                <label class="label campo-duplo">
+                    Data de Devolução
+                    <input class="input" type="date" name="data_devolucao" required>
+                </label>
+                <label class="label campo-simples">
+                    Horário
+                    <input class="input" type="time" name="hora_devolucao" required>
+                </label>
+            </div>
+
+            <!-- DADOS DO CONDUTOR -->
+            <label class="label">
+                Nome do Condutor Principal
+                <input class="input" type="text" name="nome_condutor" placeholder="Nome completo conforme CNH" required>
+            </label>
+
+            <div class="linha-campos">
+                <label class="label campo-metade">
+                    CPF
+                    <input class="input" type="text" name="cpf_condutor" placeholder="000.000.000-00" required>
+                </label>
+                <label class="label campo-metade">
+                    Telefone / WhatsApp
+                    <input class="input" type="tel" name="telefone_condutor" placeholder="(11) 99999-9999" required>
+                </label>
+            </div>
+
+            <input type="submit" value="Confirmar Reserva" class="submit submit-reserva">
+        </form>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-coluna">
+                <img src="img/logo.png" alt="Logo Autoguel" class="footer-logo">
+                <p>Locadora de veículos com frota diversificada e opção sustentável de carros elétricos.</p>
+                <p class="tag-eco">🌿 Loja Única</p>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo de Veículos</a></li>
+                    <li><a href="reserva.html">Fazer Reserva</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Acesso</h4>
+                <ul>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="cadastro.html">Cadastrar-se</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Nossa Loja</h4>
+                <p>📍 <strong>Loja Central Autoguel</strong></p>
+                <p>Av. Principal, 1000 - Centro</p>
+                <p class="footer-horario">Horário: Seg a Sáb das 08h às 19h</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

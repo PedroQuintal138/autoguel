@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Autoguel - Aluguel de Carros</title>
+</head>
+<body>
+
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="nav-logo">
+                <img src="img/logo.png" alt="Logo Autoguel">
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link ativo">Início</a>
+                <a href="catalogo.html" class="nav-link">Catálogo</a>
+                <a href="reserva.html" class="nav-link">Reserva</a>
+            </nav>
+
+            <div class="nav-acoes">
+                <a href="login.html" class="btn-link">Entrar</a>
+                <a href="cadastro.html" class="btn-destaque">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main>
+        <section class="hero">
+            <div class="hero-conteudo">
+                <span class="badge-tag">Frota Completa e Diversificada</span>
+                <h1>Alugue o Carro Ideal na <span>Autoguel</span></h1>
+                <p>
+                    Oferecemos veículos convencionais flex, modelos híbridos e <strong>também dispomos da opção sustentável de carros 100% elétricos</strong> para quem deseja zero emissão de poluentes. Tudo com retirada rápida em nossa loja única.
+                </p>
+                <div class="hero-botoes">
+                    <a href="catalogo.html" class="submit btn-hero">Ver Catálogo Completo</a>
+                    <a href="reserva.html" class="btn-outline">Fazer Reserva Agora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SUSTENTABILIDADE: OPÇÃO DE CARROS ELÉTRICOS -->
+        <section class="secao-sustentabilidade">
+            <div class="secao-cabecalho">
+                <span class="badge-eco">🌱 Opção Ecológica</span>
+                <h2>Também Dispomos de Carros Elétricos</h2>
+                <p>Além da nossa frota tradicional, incentivamos a mobilidade sustentável oferecendo modelos 100% elétricos para sua escolha.</p>
+            </div>
+
+            <div class="cards-eco-container">
+                <article class="card-eco">
+                    <div class="eco-icone">⚡</div>
+                    <h3>Zero Emissão de Carbono</h3>
+                    <p>Optando por um veículo elétrico, você roda sem queima de combustíveis fósseis, com zero emissão de CO₂ pelo escapamento.</p>
+                </article>
+
+                <article class="card-eco">
+                    <div class="eco-icone">🔇</div>
+                    <h3>Sem Poluição Sonora</h3>
+                    <p>Motores elétricos silenciosos que reduzem o ruído nas cidades e proporcionam uma viagem tranquila e confortável.</p>
+                </article>
+
+                <article class="card-eco">
+                    <div class="eco-icone">🔋</div>
+                    <h3>Eficiência Energética</h3>
+                    <p>Aproveitamento superior a 80% da energia da bateria, garantindo autonomia confiável e menor custo por quilômetro rodado.</p>
+                </article>
+            </div>
+
+            <div class="banner-destaque-eletrico">
+                <div class="destaque-texto">
+                    <h3>Loja Única com Suporte Completo</h3>
+                    <p>Retirada e devolução centralizada em nossa loja única. Veículos convencionais com tanque cheio e elétricos com 100% de bateria recarregada!</p>
+                </div>
+                <a href="reserva.html" class="btn-destaque">Reservar Veículo</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DESTAQUES DA FROTA (FOTOS REAIS, MODELO, CATEGORIA E AVISO) -->
+        <section class="secao-frota">
+            <div class="secao-destaques-topo">
+                <h2>Destaques da Frota</h2>
+                <p class="subtitulo-destaques">Confira alguns modelos disponíveis em nossa loja única.</p>
+            </div>
+
+            <div class="grid-carros">
+
+                <!-- DESTAQUE 1: BYD DOLPHIN MINI (ELÉTRICO) -->
+                <article class="card-carro card-destaque-verde">
+                    <span class="badge-card-eco">Opção 100% Elétrica</span>
+                    <img class="carro-foto" src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=600&q=80" alt="BYD Dolphin Mini">
+                    <h3>BYD Dolphin Mini EV</h3>
+                    <div class="carro-categoria"><strong>Categoria:</strong> Compacto Elétrico (Grupo CE)</div>
+                    <div class="aviso-similar">⚠️ Este modelo ou similar da mesma categoria</div>
+                    
+                    <ul class="carro-recursos">
+                        <li><span>⚡</span> 100% Elétrico</li>
+                        <li><span>🔋</span> 280 km autonomia</li>
+                        <li><span>👥</span> 4 Passageiros</li>
+                        <li><span>⚙️</span> Automático</li>
+                    </ul>
+                    <div class="carro-preco-box">
+                        <span class="diaria-label">Diária a partir de</span>
+                        <div class="preco-valor">R$ 139,90 <span>/ dia</span></div>
+                    </div>
+                    <a href="reserva.html" class="submit btn-card">Alugar Este</a>
+                </article>
+
+                <!-- DESTAQUE 2: HYUNDAI HB20 (CONVENCIONAL) -->
+                <article class="card-carro">
+                    <span class="badge-card-convencional">Flex Convencional</span>
+                    <img class="carro-foto" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Hyundai HB20">
+                    <h3>Hyundai HB20 1.0</h3>
+                    <div class="carro-categoria"><strong>Categoria:</strong> Hatch Econômico (Grupo EC)</div>
+                    <div class="aviso-similar">⚠️ Este modelo ou similar da mesma categoria</div>
+
+                    <ul class="carro-recursos">
+                        <li><span>⛽</span> Motor 1.0 Flex</li>
+                        <li><span>👥</span> 5 Passageiros</li>
+                        <li><span>⚙️</span> Câmbio Manual</li>
+                        <li><span>❄️</span> Ar-condicionado</li>
+                    </ul>
+                    <div class="carro-preco-box">
+                        <span class="diaria-label">Diária a partir de</span>
+                        <div class="preco-valor">R$ 109,90 <span>/ dia</span></div>
+                    </div>
+                    <a href="reserva.html" class="submit btn-card">Alugar Este</a>
+                </article>
+
+                <!-- DESTAQUE 3: TOYOTA COROLLA HYBRID (HÍBRIDO) -->
+                <article class="card-carro">
+                    <span class="badge-card-hibrido">Híbrido Flex</span>
+                    <img class="carro-foto" src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=600&q=80" alt="Toyota Corolla Hybrid">
+                    <h3>Toyota Corolla Altis Hybrid</h3>
+                    <div class="carro-categoria"><strong>Categoria:</strong> Sedan Médio Híbrido (Grupo SM)</div>
+                    <div class="aviso-similar">⚠️ Este modelo ou similar da mesma categoria</div>
+
+                    <ul class="carro-recursos">
+                        <li><span>🔋</span> Híbrido Flex</li>
+                        <li><span>⛽</span> 20 km/litro</li>
+                        <li><span>👥</span> 5 Passageiros</li>
+                        <li><span>⚙️</span> Câmbio CVT</li>
+                    </ul>
+                    <div class="carro-preco-box">
+                        <span class="diaria-label">Diária a partir de</span>
+                        <div class="preco-valor">R$ 189,90 <span>/ dia</span></div>
+                    </div>
+                    <a href="reserva.html" class="submit btn-card">Alugar Este</a>
+                </article>
+
+            </div>
+
+            <div class="catalogo-link-box">
+                <a href="catalogo.html" class="btn-link">Ver Todos os Veículos no Catálogo →</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-coluna">
+                <img src="img/logo.png" alt="Logo Autoguel" class="footer-logo">
+                <p>Locadora de veículos com frota diversificada e opção sustentável de carros elétricos.</p>
+                <p class="tag-eco">🌿 Loja Única</p>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo de Veículos</a></li>
+                    <li><a href="reserva.html">Fazer Reserva</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Acesso</h4>
+                <ul>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="cadastro.html">Cadastrar-se</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Nossa Loja</h4>
+                <p>📍 <strong>Loja Central Autoguel</strong></p>
+                <p>Av. Principal, 1000 - Centro</p>
+                <p class="footer-horario">Horário: Seg a Sáb das 08h às 19h</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
